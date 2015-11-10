@@ -82,7 +82,7 @@ public class PipelineConfig extends BaseCollection<StageConfig> implements Param
     public static final String CONFIGURATION_TYPE_STAGES = "configurationType_stages";
     public static final String CONFIGURATION_TYPE_TEMPLATE = "configurationType_template";
     public static final String LABEL_TEMPLATE_ERROR_MESSAGE =
-            "Invalid label. Label should be composed of alphanumeric text, it should contain the builder number as ${COUNT}, can contain a material revision as ${<material-name>} of ${<material-name>[:<number>]}, or use params as #{<param-name>}.";
+            "Invalid label. Label should be composed of alphanumeric text. It normally contains the build number using ${COUNT}, can contain a material revision as ${<material-name>} (or truncated using ${<material-name>[:<number>]}), and can include params as #{<param-name>}.";
 
     @SkipParameterResolution
     @ConfigAttribute(value = "name", optional = false)
